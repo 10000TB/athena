@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col-md-12">
+	<div class="row">
+		<input id="searchPlace" class="controls" type="text" placeholder="Search a location"/>
+		<div id='mapDiv' class="col-md-6 align-left">
+		</div>
+		<div class="col-md-6"> <h1>Hello {{name}}!</h1> </div>
+	</div>
+</div>
+<script src="{{STATIC_URL}}js/athena-home.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places,drawing&callback=initMap" async defer></script>
+{% endblock %}

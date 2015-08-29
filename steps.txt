@@ -1,0 +1,16 @@
+Creating a project:
+django-admin startproject <project name>
+
+Set the Database properties in settings.py and sync the database using the following command.
+python manage.py syncdb
+
+Running the Django server:
+python manage.py runserver <portnumber - default is 8000>
+To make the application available on other systems of the network:
+python manage.py runserver 0.0.0.0:<portnumber - default is 8000>
+
+setup bootstrap files into the static directory.
+
+Creating an application:
+python manage.py startapp <app name>
+
